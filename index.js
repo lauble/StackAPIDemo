@@ -1,5 +1,6 @@
 async function getStackExchangeUsers() {
-  const apiUrl = 'https://api.stackexchange.com/2.3/users?order=desc&sort=reputation&site=stackoverflow';
+  const apiUrl =
+    'https://api.stackexchange.com/2.3/users?order=desc&sort=reputation&site=stackoverflow';
 
   // Make the API call
   const response = await fetch(apiUrl);
@@ -16,7 +17,7 @@ async function getStackExchangeUsers() {
       silver: item.badge_counts.silver,
       bronze: item.badge_counts.bronze,
     },
-    location: item.location
+    location: item.location,
   }));
   showTable(usersResponse);
 }
