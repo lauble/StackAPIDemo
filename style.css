@@ -2,3 +2,8 @@ body {
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, system-ui, -apple-system, sans-serif;
 }
+
+table, th, td {
+    border: 1px solid;
+    margin: auto;
+}
