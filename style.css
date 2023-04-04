@@ -1,9 +1,17 @@
 body {
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, system-ui, -apple-system, sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 
 table, th, td {
     border: 1px solid;
+    border-collapse: collapse;
     margin: auto;
+    padding: 10px;
 }
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
